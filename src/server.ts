@@ -2,7 +2,6 @@ import express, { Request, Response } from 'express';
 import Cors from 'cors';
 import * as functions from "firebase-functions"
 import helmet from "helmet"
-
 // setup 
 const app = express();
 const port = 3001;
