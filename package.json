@@ -1,0 +1,29 @@
+{
+  "name": "cloud-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./dist/server.js",
+    "deploy": "npx tsc && firebase deploy --only functions:api",
+    "compile-ts": "npx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.3.0",
+    "firebase-functions": "^5.0.1",
+    "helmet": "^7.1.0"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
